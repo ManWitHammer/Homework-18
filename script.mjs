@@ -3,34 +3,35 @@ import getData from './actions/getData.mjs'
 import postData from './actions/postData.mjs'
 
 const URL = 'http://localhost:3000/USERS'
-const buttonPost = document.querySelector('.post')
-const buttonGet = document.querySelector('.get')
-const form = document.querySelector('form')
-const list = document.querySelector('.profiles')
+// const buttonPost = document.querySelector('.post')
+// const buttonGet = document.querySelector('.get')
+// const form = document.querySelector('form')
+const list = document.querySelector('.list')
 
 // отправка данных
-buttonPost.addEventListener('click', e => {
-	// отмена стандартного поведения кнопки
-	e.preventDefault()
-	try {
-		// сбор данных из формы
-		const data = new FormData(form)
-		// собираем объект для отправки
-		const user = {
-			color: data.get('color'),
-			figure: data.get('figure'),
-		}
-		console.log(user)
-		// отправка данных на сервер
-		postData(URL, user)
-		// очистка формы
-		form.reset()
-	} catch (error) {
-		console.error(error)
-	}
-})
-// получение данных
-buttonGet.addEventListener('click', async e => {
+// buttonPost.addEventListener('click', e => {
+// 	// отмена стандартного поведения кнопки
+// 	e.preventDefault()
+// 	try {
+// 		// сбор данных из формы
+// 		const data = new FormData(form)
+// 		// собираем объект для отправки
+// 		const user = {
+// 			color: data.get('color'),
+// 			figure: data.get('figure'),
+// 		}
+// 		console.log(user)
+// 		// отправка данных на сервер
+// 		postData(URL, user)
+// 		// очистка формы
+// 		form.reset()
+// 	} catch (error) {
+// 		console.error(error)
+// 	}
+// })
+
+
+document.addEventListener('DOMContentLoaded', async (e) => {
 	e.preventDefault()
 	try {
 		const data = await getData(URL)

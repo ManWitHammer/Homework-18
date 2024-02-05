@@ -2,8 +2,7 @@
   "USERS": [
     {
       "id": "2dd3",
-      "color": "green",
-      "figure": "square"
+      
     },
     {
       "id": "a25b",
@@ -13,6 +12,16 @@
     {
       "id": "4baf",
       "color": "rgb(0,255,255)",
+      "figure": "rectangle"
+    },
+    {
+      "id": "0691",
+      "color": "green",
+      "figure": " square"
+    },
+    {
+      "id": "ee49",
+      "color": "yellow",
       "figure": "rectangle"
     }
   ]

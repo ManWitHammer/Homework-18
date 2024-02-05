@@ -5,21 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	</head>
 	<body>
-		<form>
-			<label for="name"
-				>Color:
-				<input type="text" id="name" name="color" />
-			</label>
-			<label for="email"
-				>Figure(rectangle, square, circle):
-				<input type="text" id="name" name="figure" />
-			</label>
-			<button class="post">Отправить</button>
-			<button class="get">Получить</button>
-		</form>
-		<ul class="profiles"></ul>
+		<div class="container">
+			<div class="upBlock">
+				<div class="upBlock__title">
+					<p>My tasks<span class="material-symbols-outlined"> expand_more</span></p>
+				</div>
+			</div>
+			<div class="downBlock">
+				<div class="addedBlock"><span class="material-symbols-outlined">add</span> add a task</div>
+				<ul class="list"></ul>
+			</div>
+			<!-- <form>
+				<label for="name"
+					>Color:
+					<input type="text" id="name" name="color" />
+				</label>
+				<label for="email"
+					>Figure(rectangle, square, circle):
+					<input type="text" id="name" name="figure" />
+				</label>
+				<button class="post">Отправить</button>
+				<button class="get">Получить</button>
+			</form>
+			<ul class="profiles"></ul> -->
+		</div>	
 		<script type="module" src="script.mjs"></script>
 	</body>
 </html>
