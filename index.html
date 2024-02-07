@@ -15,22 +15,25 @@
 				</div>
 			</div>
 			<div class="downBlock">
-				<div class="addedBlock"><span class="material-symbols-outlined">add</span> add a task</div>
+				<details id="detailsElement">
+					<summary>
+						<div class="addedBlock"><span class="material-symbols-outlined">add</span> add a task</div>
+					</summary>
+					<form>
+						<label for="name"></label>
+							<input type="text" id="name" name="title" placeholder="Title"/>
+						</label>
+						<label for="name">
+							<input type="text" id="name" name="priority" placeholder="Priority(low, medium, high)"/>
+						</label>
+						<label for="name">
+							<textarea type="text" id="name" name="details" placeholder="Details"></textarea>
+						</label>
+						<button type="button" id="buttonPost">Post</button>
+					</form>
+				</details>
 				<ul class="list"></ul>
 			</div>
-			<!-- <form>
-				<label for="name"
-					>Color:
-					<input type="text" id="name" name="color" />
-				</label>
-				<label for="email"
-					>Figure(rectangle, square, circle):
-					<input type="text" id="name" name="figure" />
-				</label>
-				<button class="post">Отправить</button>
-				<button class="get">Получить</button>
-			</form>
-			<ul class="profiles"></ul> -->
 		</div>	
 		<script type="module" src="script.mjs"></script>
 	</body>
