@@ -10,14 +10,31 @@
 	<body>
 		<div class="container">
 			<div class="upBlock">
-				<div class="upBlock__title">
-					<p>My tasks<span class="material-symbols-outlined"> expand_more</span></p>
-				</div>
+				<details>
+					<summary>
+						<div class="upBlock__title">
+							<p>My tasks<span class="material-symbols-outlined"> expand_more</span></p>
+						</div>
+					</summary>
+					<div class="invSort">
+						<p class="material-symbols-outlined"><span>Sort list</span>sort</p>
+						<div class="invSort__sort">
+							<p class="ascending">Ascending</p>
+							<p class="descending">descending</p>
+						</div>
+						<p class="material-symbols-outlined"><span>Filter list</span>filter_list</p>
+						<div class="invSort_filt">
+							<p class="completed">completed</p>
+							<p class="uncompleted">uncompleted</p>
+							<p class="all">all</p>
+						</div>
+					</div>
+				</details>
 			</div>
 			<div class="downBlock">
 				<details id="detailsElement">
 					<summary>
-						<div class="addedBlock"><span class="material-symbols-outlined">add</span> add a task</div>
+						<div class="addedBlock"><span class="material-symbols-outlined">add_box</span> add a task</div>
 					</summary>
 					<form>
 						<label for="name"></label>
